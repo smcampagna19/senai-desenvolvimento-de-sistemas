@@ -1,38 +1,22 @@
-# Linguagem de Marcação
+# Curriculo - Salomao Mateus Campagna
 
-Esta pasta reúne atividades, exercícios e projetos relacionados à unidade curricular de Linguagem de Marcação, desenvolvidos ao longo do curso Técnico em Desenvolvimento de Sistemas do SENAI-SP.
+Este repositorio contem meu curriculo desenvolvido em HTML. O projeto foi criado como parte dos meus estudos em desenvolvimento web, com o objetivo de apresentar minhas informacoes profissionais, formacao, habilidades e contatos.
 
-## Objetivo
+## Sobre o projeto
 
-Organizar os materiais de estudo e prática voltados à criação, estruturação e estilização de páginas web, mantendo uma base clara para consulta, revisão e acompanhamento da evolução dos projetos.
+O curriculo apresenta:
 
-## Conteúdos abordados
+- Informacoes pessoais
+- Contatos
+- Objetivo profissional
+- Habilidades
+- Formacao e certificados
+- Link para o GitHub
 
-Os conteúdos desta pasta podem incluir:
+## Tecnologias utilizadas
 
-- Estruturação de páginas com HTML
-- Uso de elementos semânticos
-- Criação de formulários
-- Organização de textos, imagens, listas, tabelas e links
-- Navegação entre páginas
-- Introdução à estilização com CSS
-- Validação e boas práticas de código
-- Construção de leiautes para interfaces web
-- Otimização de elementos visuais para páginas web
+- HTML5
 
-## Organização
+## Como visualizar
 
-Os arquivos e projetos serão adicionados conforme o desenvolvimento das atividades práticas. Cada projeto poderá conter sua própria estrutura, com arquivos como:
-
-- `index.html`
-- `style.css`
-- `script.js`, quando necessário
-- imagens e demais recursos utilizados
-
-## Finalidade
-
-Esta pasta serve como registro da aprendizagem, prática de versionamento e organização dos projetos desenvolvidos durante o curso.
-
-## Autor
-
-Salomão Campagna
+Para visualizar o curriculo, abra o arquivo `index.html` em qualquer navegador.

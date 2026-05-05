@@ -1,0 +1,32 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Pastas do sistema e IDEs
+.vscode/
+.idea/
+
+# Dependências e builds
+node_modules/
+dist/
+build/
+
+# Logs e arquivos temporários
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Cache de navegador e arquivos gerados
+*.log
+*.tmp
+*.temp
+
+# Arquivos enviados pelo sistema
+.sass-cache/
+.cache/
+
+# Arquivos de backup
+*~
+*.swp
+*.swo
