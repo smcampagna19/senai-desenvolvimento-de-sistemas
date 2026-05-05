@@ -1,39 +1,39 @@
-# Primeiro Repositório: Variáveis JS
+# Desafio de Variáveis JS
 
-Este repositório contém uma atividade inicial de **JavaScript**, com foco no estudo de variáveis, declaração, armazenamento de valores e escopo.
+Este repositório contém um desafio prático de **JavaScript**, desenvolvido para treinar o uso de variáveis, declaração, inicialização, escopo e saída de dados no console.
 
 ## Objetivo
 
-O objetivo da atividade é praticar conceitos básicos de JavaScript, entendendo como criar variáveis, atribuir valores e utilizar essas informações no código.
+O objetivo da atividade é completar um código em JavaScript utilizando os principais conceitos iniciais da linguagem.
 
-## Arquivos da atividade
+## O que o programa faz
 
-- `declaracao.js`  
-  Demonstra a declaração de variáveis usando `let` e a exibição dos valores no console, como nome e idade. :contentReference[oaicite:0]{index=0}
+O programa armazena o nome de um aluno, registra duas notas, calcula a média e mostra se o aluno foi aprovado ou reprovado.
 
-- `armazenamento.js`  
-  Mostra como declarar uma variável primeiro e atribuir um valor depois. :contentReference[oaicite:1]{index=1}
+A regra usada é:
 
-- `escopo.js`  
-  Apresenta um exemplo simples de escopo com função, bloco `if` e variável criada dentro do bloco. :contentReference[oaicite:2]{index=2}
+- Média maior ou igual a 6: aprovado
+- Média menor que 6: reprovado
+
+## Arquivo da atividade
+
+- `desafio.js`  
+  Arquivo principal do desafio. Nele são criadas as variáveis `nomeAluno`, `nota1`, `nota2`, `media` e `resultado`. O código calcula a média das notas e exibe as informações no console. :contentReference[oaicite:0]{index=0}
 
 ## Conceitos estudados
 
-- Declaração de variáveis
+- Variáveis
+- Declaração
+- Inicialização
 - Atribuição de valores
-- Uso de `let`
-- Exibição de dados com `console.log`
-- Escopo de variáveis
-- Funções simples
-- Estrutura condicional `if`
+- Cálculo de média
+- Escopo
+- Condicional `if` e `else`
+- Saída de dados com `console.log`
 
 ## Como executar
 
-Para executar os arquivos, é possível usar o Node.js.
-
-Exemplo:
+Para executar o arquivo, é possível usar o Node.js:
 
 ```bash
-node declaracao.js
-node armazenamento.js
-node escopo.js
+node desafio.js
