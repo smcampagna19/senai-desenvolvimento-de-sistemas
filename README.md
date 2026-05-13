@@ -12,7 +12,7 @@ Este repositório está dividido por áreas de estudo e tipos de projeto:
 
 - `linguagem-de-marcacao/` — atividades relacionadas à estruturação e marcação de páginas web.
 - `javascript/` — exercícios de lógica, variáveis, condicionais, laços e interatividade.
-- `atividade-guiadas` — programações feitas com o auxilio do professor.
+- `atividades-guiadas` — programações feitas com o auxilio do professor.
 
 ## Tecnologias e conteúdos
 
