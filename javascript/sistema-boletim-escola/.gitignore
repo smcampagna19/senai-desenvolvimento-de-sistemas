@@ -1,0 +1,46 @@
+# Dependências
+node_modules/
+bower_components/
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Build / Dist
+dist/
+build/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+.sass-cache/
+.eslintcache
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editores
+.vscode/
+.idea/
+*.suo
+*.sw?
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+
+# Minificados gerados automaticamente
+*.min.js
+*.min.css

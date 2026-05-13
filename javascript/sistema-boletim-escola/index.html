@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boletim Escolar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #dce2f5;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      width: 60%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4c07e3;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sistema de Boletim Escolar</h1>
+
+  <button onclick="gerarBoletim()">Gerar Boletim</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function calcularMedia(notas) {
+      var soma = 0;
+      var indice = 0;
+
+      while (indice < notas.length) {
+        soma = soma + notas[indice];
+        indice++;
+      }
+
+      return soma / notas.length;
+    }
+
+    function classificarAluno(media) {
+      if (media >= 9) {
+        return "Excelente";
+      } else if (media >= 7) {
+        return "Bom";
+      } else if (media >= 6) {
+        return "Aprovado";
+      } else {
+        return "Reprovado";
+      }
+    }
+
+    function gerarBoletim() {
+      var nomes = ["Salomão", "Kaius", "Camila", "Isabel", "Vinicius"];
+
+      var alunos = [
+        [10, 9, 10],
+        [5, 3, 5],
+        [10, 9, 9],
+        [7, 5, 8],
+        [3, 0, 4]
+      ];
+
+      var tabela = "<table>";
+      tabela += "<tr><th>Aluno</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th><th>Média</th><th>Resultado</th></tr>";
+
+      for (var i = 0; i < alunos.length; i++) {
+        var notas = alunos[i];
+        var media = calcularMedia(notas);
+        var resultado = classificarAluno(media);
+
+        tabela += "<tr>";
+        tabela += "<td>" + nomes[i] + "</td>";
+        tabela += "<td>" + notas[0] + "</td>";
+        tabela += "<td>" + notas[1] + "</td>";
+        tabela += "<td>" + notas[2] + "</td>";
+        tabela += "<td>" + media.toFixed(1) + "</td>";
+        tabela += "<td>" + resultado + "</td>";
+        tabela += "</tr>";
+      }
+
+      tabela += "</table>";
+
+      document.getElementById("resultado").innerHTML = tabela;
+    }
+  </script>
+
+</body>
+</html>

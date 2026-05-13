@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programção</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #b27fff;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0000ff;
+            color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #0000cc;
+        }
+
+        #saida {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <h1>Lógica de Programação</h1>
+    <p>Clique nos botões para executar os exercícios: </p>
+
+    <button onclick="exercicioFor()">1 - FOR (Contador)</button>
+    <button onclick="exercicioWhile()">2 - WHILE (Contador)</button>
+    <button onclick="exercicioVetor()">3 - Vetor</button>
+    <button onclick="exercicioMatriz()">4 - Matrizes</button>
+
+    <div id ="saida"></div>
+
+    <script>
+        function mostrar (texto) {
+            document.getElementById("saida").innerHTML += texto + "<br>";
+        }
+        function limpar() {
+            document.getElementById("saida").innerHTML = "";
+        }
+        //FOR
+        function exercicioFor() {
+            limpar ();
+
+            let soma = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                soma += i;
+                mostrar("Número: " + i);
+            }
+            mostrar("Soma Total: " + soma);
+        }
+
+        //WHILE
+        function exercicioWhile() { 
+            limpar();
+
+            let i = 1;
+
+            while (i <= 10) {
+                mostrar("Número: " + i);
+                i++;
+            }
+        }
+
+        //VETOR
+        function exercicioVetor() {
+            limpar();
+
+            let notas = [7, 8, 6, 9];
+            let soma = 0;
+
+            for (let i = 0; i < notas.length; i++) {
+                soma += notas[i];
+                mostrar("Notas: " + notas[i]);
+            }
+
+            let media = soma / notas.length;
+            mostrar("Média: " + media);
+        }
+
+            //MATRIZES
+
+            function exercicioMatriz() {
+                limpar();
+
+                let matriz = [
+                    [7, 8, 9],
+                    [6, 7, 8],
+                    [9, 9, 10]
+                ];
+
+                for (let i = 0; i < matriz.length; i++) {
+
+                    let soma = 0;
+
+                    for (let j = 0; j < matriz[i].length; j++) {
+                        soma += matriz[i][j];
+
+                    }
+
+                    let media = soma / matriz[i].length;
+
+                    if (media >= 7) {
+                        mostrar("Aluno " + (i + 1) + " aprovado com média: " + media);
+                    }else {
+                        mostrar("Aluno " + (i + 1) + " reprovado com média: " + media);
+                    }
+                }
+            }
+        
+    </script>
+</body>
+</html>
