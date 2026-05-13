@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Contato</h1>
+    <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Idade">Idade:</label><br>
+        <input type="number" id="Idade" name="Idade" required><br><br>
+
+        <label for="Turno">Turno:</label><br>
+        <input type="checkbox" id="Manha" name="Turno" value="Manha">
+        <label for="Manha">Manhã</label>
+        <input type="checkbox" id="Tarde" name="Turno" value="Tarde">
+        <label for="Tarde">Tarde</label>
+        <input type="checkbox" id="Noite" name="Turno" value="Noite">
+        <label for="Noite">Noite</label><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+        <label for="interesses">Interesses:</label><br>
+        <select id="interesses" name="interesses" required>
+            <option value="">Selecione</option>
+            <option value="Curso de HTML e CS">Curso de HTML e CS</option>
+            <option value="Curso de JavaScript">Curso de JavaScript</option>
+            <option value="Curso de Python">Curso de Python</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button><br><br>
+    </form>
+    <button onclick="window.location.href='index.html'">Voltar para o início</button>
+</body>
+</html>
