@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3 - Limite de Usuários</title>
+</head>
+<body>
+    <h1>Sistema de Limite de Usuários</h1>
+    <p>Bem-vindo ao sistema de controle de usuários!</p>
+
+    <p>Usuários online: <span id="contagem">0</span> / 100</p>
+    <br>
+
+    <button onclick="entrar()">Entrar no Sistema</button>
+    <button onclick="sair()">Sair do Sistema</button>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        const MAX_USUARIOS = 100;
+        let usuariosOnline = 0;
+
+        function entrar() {
+            if (usuariosOnline < MAX_USUARIOS) {
+                usuariosOnline++;
+                document.getElementById("contagem").innerHTML = usuariosOnline;
+                document.getElementById("resultado").innerHTML = "Acesso permitido! Usuários online: " + usuariosOnline;
+            } else {
+                document.getElementById("resultado").innerHTML = "Servidor cheio! Máximo de " + MAX_USUARIOS + " usuários atingido.";
+            }
+        }
+
+        function sair() {
+            if (usuariosOnline > 0) {
+                usuariosOnline--;
+                document.getElementById("contagem").innerHTML = usuariosOnline;
+                document.getElementById("resultado").innerHTML = "Usuário saiu. Usuários online: " + usuariosOnline;
+            } else {
+                document.getElementById("resultado").innerHTML = "Nenhum usuário para remover.";
+            }
+        }
+    </script>
+</body>
+</html>

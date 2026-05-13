@@ -1,0 +1,66 @@
+/*Introdução ao CSS
+O CSS precisa seguir uma regra, um seletor/indetificados HTML,
+ seguido de chaves, e dentro das chaves, as propriedades e os valores.
+ Sintax:
+ seletor {
+    propriedade: valor;
+    propriedade: valor;
+ }
+    Componentes do sintaxe:
+    - Seletor: é o elemento HTML que queremos estilizar.
+    - Propriedade: é a característica que queremos modificar, como cor, tamanho, etc.
+    - Bloco de declaração {}: é o conjunto de propriedades e valores dentro das chaves.
+    - Valor: é a definição específica para a propriedade.
+    */
+
+
+    h1 {
+        color: orange;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    p {
+        color: orangered;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        color: rgb(255, 80, 80);
+        font-size: 40px;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .link {
+        color: orange;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    {
+        table {
+            border: 1px solid red;
+            border-collapse: collapse;
+            color: red;
+            width: 100%;
+        }
+    }
+
+    td {
+        border: 1px solid red;
+        padding: 10px;
+        text-align: center;
+    }
+
+    body {
+        background-color: rgb(58, 5, 107);
+    }
+
+

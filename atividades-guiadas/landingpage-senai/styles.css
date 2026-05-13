@@ -1,0 +1,53 @@
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+img.logo {
+    height: 200px;
+    width: 100%;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+form {
+    padding: 80px;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+    background-color: black;
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
