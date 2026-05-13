@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Roupas - Grupo 2</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .caixa {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        select {
+            width: 85%;
+            padding: 8px;
+            margin: 8px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #e91e8c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #c2185b;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Loja de Roupas</h1>
+    <h3>Bem-vindo! Faça seu pedido abaixo</h3>
+
+    <div class="caixa">
+
+        <label>Nome do cliente:</label><br>
+        <input type="text" id="nomeCliente" placeholder="Ex: Gabriel"><br>
+
+        <label>Nome da peça:</label><br>
+        <select id="nomePeca">
+            <option value="">Selecione uma roupa</option>
+            <option value="Camiseta">Camiseta</option>
+            <option value="Calça">Calça</option>
+            <option value="Jaqueta">Jaqueta</option>
+            <option value="Vestido">Vestido</option>
+            <option value="Shorts">Shorts</option>
+            <option value="Blusa">Blusa</option>
+        </select><br>
+
+        <label>Quantidade de peças:</label><br>
+        <input type="number" id="quantidade" placeholder="Ex: 3" min="1"><br>
+
+        <button onclick="calcular()">Calcular Pedido</button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
