@@ -1,0 +1,28 @@
+# Dependências
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Arquivos de build
+dist/
+build/
+out/
+
+# Arquivos locais
+.env
+.env.local
+*.log
+
+# Ferramentas
+.sass-cache/
+.parcel-cache/
