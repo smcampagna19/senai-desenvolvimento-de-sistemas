@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interface {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #000850;
+    color: white;
+    padding: 40px 0;
+}
+
+footer .line-footer1 {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+    
+}
+
+.line-footer1 h2 {
+    font-size: 2.5rem;
+}
+
+.p-rodapé1 {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+.form-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contato input[type="email"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    width: 300px;
+    height: 40px;
+}
+
+.form-contato input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.form-contato input[type="submit"]:hover {
+    background-color: white;
+    color: red;
+}
+
+footer .line-footer2 {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.p-rodapé2 {
+    font-size: .8rem;
+    margin: 10px 0 20px;
+}
+
+.line-footer2 .box-line-footer {
+    width: calc(100% / 5);
+}
+
+footer .box-line-footer img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer h3 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.line-footer2 .box-line-footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    font-size: .8rem;
+}
+
+.box-line-footer .btn-redes a {
+    display: inline;
+}
+
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.box-line-footer .btn-redes button:hover {
+    background-color: red;
+    border-color: red;
+}
+
+footer .line-footer3 {
+    text-align: center;
+    padding: 20px 0;
+}
