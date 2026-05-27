@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black">
+    <div class="w-screen h-screen grid grid-cols-2 grid-rows-6 bg-black">
+        <div class="row-span-5 p-10 bg-black border-r border-gray-700">
+            <img class="w-20 h-20" src="./img/instagram_icon.png" alt="Instagram logo">
+            <p class="text-white">Veja momentos do dia a dia dos seus 
+                <span class="bg-gradient-to-r from-orange-500 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent">amigos próximos.</span> </p>
+            <img class="max-w-96" src="./img/imagem_story_instagram.webp" alt="Instagram story preview">
+        </div>
+
+        <!--Formulario-->
+        <div class="row-span-5 p-10 flex flex-col justify-center items-center bg-[#121212] text-white">
+            <form class="w-80 flex flex-col justify-center items-center gap-5">
+                <h3 class="font-bold text-2xl self-start">Entrar no Instagram</h3>
+                <input class="bg-[#121212] border rounded-sm border-[#363636] text-white h-9 w-full px-3 focus:outline-none focus:border-gray-500" placeholder="telefone, nome de usuario ou email" />
+                <input class="bg-[#121212] border rounded-sm border-[#363636] text-white h-9 w-full px-3 focus:outline-none focus:border-gray-500" placeholder="senha" />
+
+                <button class="bg-[#0095f6] text-white h-9 w-full rounded-sm hover:bg-[#1877f2] cursor-pointer font-semibold">Entrar</button>
+                <button class="text-white hover:text-gray-300 h-9 w-full rounded-sm cursor-pointer font-bold">Esqueci minha senha</button>
+            </form>
+
+            <div class="w-80 flex flex-col justify-center items-center gap-5">
+                <button class="h-9 w-full rounded-sm cursor-pointer border border-[#363636] text-white hover:bg-[#1a1a1a] flex items-center justify-center gap-2"><i class="bi bi-facebook text-blue-500"></i> Entrar com Facebook</button>
+                <button class="h-9 w-full rounded-sm cursor-pointer border border-[#363636] text-[#0095f6] hover:bg-[#1a1a1a]">criar uma conta</button>
+                <i class="bi bi-meta text-white">Meta</i>
+            </div>
+        </div>
+
+        <div class="row-span-1 col-span-2 bg-black border-t border-[#262626] p-6">
+            <ul class="flex flex-wrap gap-5 justify-center">
+            <li class="text-white text-sm">Meta</li>   
+            <li class="text-white text-sm">Sobre</li>
+            <li class="text-white text-sm">Blog</li>
+            <li class="text-white text-sm">Carreiras</li>
+            <li class="text-white text-sm">Ajuda</li>
+            <li class="text-white text-sm">API</li>
+            <li class="text-white text-sm">Privacidade</li>
+            <li class="text-white text-sm">Termos</li>
+            <li class="text-white text-sm">Localizações</li>
+            <li class="text-white text-sm">Popular</li>
+            <li class="text-white text-sm">Instagram Lite</li>
+            <li class="text-white text-sm">Meta AI</li>
+            <li class="text-white text-sm">Threads</li>
+            <li class="text-white text-sm">Upload de contato se não usuários</li>
+            <li class="text-white text-sm">Meta Verified</li>
+            </ul>
+
+            <ul class="flex flex-wrap gap-5 justify-center mt-6">
+            <li class="text-white text-sm">Português (Brasil)</li>
+            <li class="text-white text-sm">© 2026 Instagram do Facebook</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
